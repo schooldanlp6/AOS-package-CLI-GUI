@@ -4,10 +4,10 @@ Avdan OS package manager GUI - unofficial
 Avdan OS isn't just a desing its a workflow. A workflow I want to shape mainly because I like the idea and concept behind it. It's Linux and it's open source.
 
 ## Table of contents
-### [Legend]()
-### [Build status (latest version)]()
-### [Changelog]()
-### [Credits]()
+### [Legend](https://github.com/schooldanlp6/AOS-package-GUI/blob/main/README.md#legend-1)
+### [Build status (latest version)](https://github.com/schooldanlp6/AOS-package-GUI#builds)
+### [Changelog](https://github.com/schooldanlp6/AOS-package-GUI#changelog-1)
+### [Credits](https://github.com/schooldanlp6/AOS-package-GUI#credits-for-provided-wallpapers)
 
 # Avdan OS Package Manager writtten in Godot.
 ### Legend
