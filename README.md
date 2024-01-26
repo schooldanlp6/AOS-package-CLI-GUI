@@ -46,7 +46,8 @@ v.x.x -> release
 
 
 ### Build Status
-Currently no build available
+![Static Badge](https://img.shields.io/badge/build-passing-red)
+
 
 ### Changelog:
 No logs
