@@ -53,6 +53,7 @@ No logs
 
 a.0.0
 Setup of reademe.md
+-> changelogs are seen (here:)[https://github.com/schooldanlp6/wiki/wiki/Avdan-OS-%E2%80%90-The-all-package-manager-Page#changelog-1]
 
 ### Credits for provided Wallpapers:
 
