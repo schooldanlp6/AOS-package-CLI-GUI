@@ -10,6 +10,11 @@ Avdan OS isn't just a desing its a workflow. A workflow I want to shape mainly b
 ### [Credits](https://github.com/schooldanlp6/AOS-package-GUI#credits-for-provided-wallpapers)
 
 # Avdan OS Package Manager writtten in Godot.
+Depends on Apt - rewrite with own server
+
+The backand tries to aim modularity but may or may not work with non-debian repos.
+
+[-> Visit Documentation](https://github.com/schooldanlp6/wiki/blob/aosdocs/README.md)
 ### Legend
 #### Builds
 Used Engine: ![Static Badge](https://img.shields.io/badge/Godot-Engine_v4.1-blue)
