@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Check if an argument is provided
+if [ "$#" -eq 0 ]; then
+    echo "Usage: avdanpac fetch/install/remove/removeudata/version/help/update"
+    exit 1
+fi
+
+case "$1" in
+    "help")
+        /etc/aospac/scripts/help
+        ;;
+    "version")
+        /etc/aospac/scripts/version
+        ;;
+    "fetch")
+        /etc/aospac/scripts/fetch
+        ;;
+    "update")
+        /etc/aospac/scripts/update
+        ;;
+    "install")
+        /etc/aospac/scripts/install
+        ;;
+    "remove")
+        /etc/aospac/scripts/remove
+        ;;
+    "removeudata")
+        /etc/aospac/scripts/removeudata
+        ;;
+    "untar")
+        /etc/aospac/scripts/untar
+        ;;
+    *)
+        echo "OXYDE"
+        ;;
+esac

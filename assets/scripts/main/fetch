@@ -1,0 +1,32 @@
+#!/bin/bash
+cd ..
+count=1  # Initialize a counter
+total_entries=0
+
+while read -r line; do
+    if [[ $line == "aos "* ]]; then
+        # Extract everything after "aos "
+        url="${line#*aos }"
+        ((total_entries++))
+
+        # Create a variable with a unique name
+        var_name="r$count"
+        eval "$var_name=\"${line#*aos}\""
+
+        ((count++))
+    fi
+done < repos
+
+# Print the stored domains
+for ((i=1; i<count; i++)); do
+    var_name="r$i"
+    eval "domain=\$$var_name"
+    #echo "$var_name: $domain"
+done
+echo $r1
+#echo "You have $total_entries entry/ies in your mirror list"
+#make while loop to wget all packages
+sudo wget $r1
+sudo gzip --decompress Packages.gz
+sudo mv Packages pkgcache
+
