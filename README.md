@@ -3,6 +3,7 @@ Avdan OS package manager GUI - unofficial
 
 Avdan OS isn't just a desing its a workflow. A workflow I want to shape mainly because I like the idea and concept behind it. It's Linux and it's open source.
 
+Installer.sh is used to install Avdan OS package manager core. The GUI is installed to but can be disabled
 ## Table of contents
 ### [Legend](https://github.com/schooldanlp6/AOS-package-GUI/blob/main/README.md#legend-1)
 ### [Build status (latest version)](https://github.com/schooldanlp6/AOS-package-GUI#builds)
