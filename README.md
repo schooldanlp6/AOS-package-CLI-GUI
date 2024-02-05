@@ -3,13 +3,24 @@ Avdan OS package manager GUI - unofficial
 
 Avdan OS isn't just a desing its a workflow. A workflow I want to shape mainly because I like the idea and concept behind it. It's Linux and it's open source.
 
+## Project Status
+### Todo:
+- Manpages are shown not properly
+- install and remove etc doesnt work
+- parser to make an easy package list possible
+- noup files have to be made better in terms of usage
+- add multiple mirrors to be able to use and merge the pkglists
+### Done
+- installer.sh
+- dependencieresolving
+
 ## Table of contents
 ### [Legend](https://github.com/schooldanlp6/AOS-package-GUI/blob/main/README.md#legend-1)
 ### [Build status (latest version)](https://github.com/schooldanlp6/AOS-package-GUI#builds)
 ### [Changelog](https://github.com/schooldanlp6/AOS-package-GUI#changelog-1)
 ### [Credits](https://github.com/schooldanlp6/AOS-package-GUI#credits-for-provided-wallpapers)
 
-# Avdan OS Package Manager writtten in Godot.
+# Avdan OS Package Manager backend writtten in Bash.
 Depends on Apt - rewrite with own server
 
 The backand tries to aim modularity but may or may not work with non-debian repos.
@@ -51,7 +62,7 @@ v.x.x -> release
 
 
 ### Build Status
-![Static Badge](https://img.shields.io/badge/build-passing-red)
+![Static Badge](https://img.shields.io/badge/build-untested-red)
 
 
 ### Changelog:
