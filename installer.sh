@@ -1,6 +1,7 @@
 #!/bin/bash
 uname -m
 echo "Is this the correct file set? If you use arm you have to rename the aarch64 to  . eg. wget -> wget.old and wget-aarch64 -> wget"
+echo "If you use arm64 you have to change mirror list packages to debian/arm64 instead of amd64"
 echo "Proceeding in 10s"
 sleep 5
 echo "Proceeding in 5s"
@@ -33,6 +34,18 @@ sudo cp untar /etc/aospac/untar
 sudo cp version /etc/aospac/version
 sudo cp help /etc/aospac/help
 sudo cp avdanpac /etc/aospac/avdanpac
+sudo cp hold /etc/aospac/hold
+cd ..
+cd manpages
+sudo cp avdanpac.8 /usr/share/man/man8/
+cd ..
+cd env
+sudo cp env /etc/aospac/env
+sudo cp helpenv /etc/aospac/helpenv
+sudo cp mkenv /etc/aospac/mkenv
+sudo cp manenv /etc/aospac/manenv
+sudo cp delenv /etc/aospac/delenv
+sudo cp viweenv /etc/aospac/viewenv
 cd /etc/aospac
 #Please uncomment if back up files
 #sudo cp repos repos.old
@@ -134,9 +147,18 @@ sudo mv update scripts/update
 sudo mv untar scripts/untar
 sudo mv version scripts/version
 sudo mv help scripts/help
+sudo mv hold scripts/hold
 echo "Installing core"
 sudo mv avdanpac /usr/bin/avdanpac
 echo "Core installed"
+echo "rebuilding package list"
+#Make sure to not delete the old one
+#sudo cp installed installed.old
+#adding .noup doesn't update the package and holds it
+sudo touch installed
+sudo echo "#.noup means that these packages wont get updated. They are held packages" > installed
+sudo echo "Package: gzip.noup" >> installed
+sudo echo "Package: wget.noup" >> installed
 cd scripts
 sudo sh ./fetch
 cd ..
