@@ -18,7 +18,6 @@ Avdan OS isn't just a desing its a workflow. A workflow I want to shape mainly b
 ### [Legend](https://github.com/schooldanlp6/AOS-package-GUI/blob/main/README.md#legend-1)
 ### [Build status (latest version)](https://github.com/schooldanlp6/AOS-package-GUI#builds)
 ### [Changelog](https://github.com/schooldanlp6/AOS-package-GUI#changelog-1)
-### [Credits](https://github.com/schooldanlp6/AOS-package-GUI#credits-for-provided-wallpapers)
 
 # Avdan OS Package Manager backend writtten in Bash.
 Depends on Apt - rewrite with own server
@@ -28,7 +27,6 @@ The backand tries to aim modularity but may or may not work with non-debian repo
 [-> Visit Documentation](https://github.com/schooldanlp6/wiki/blob/aosdocs/README.md)
 ### Legend
 #### Builds
-Used Engine: ![Static Badge](https://img.shields.io/badge/Godot-Engine_v4.1-blue)
 ##### Passing
 ![Static Badge](https://img.shields.io/badge/build-passing-green) = Good no problems etc.
 
