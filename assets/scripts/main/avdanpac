@@ -1,6 +1,4 @@
 #!/bin/bash
-
-# Check if an argument is provided
 if [ "$#" -eq 0 ]; then
     echo "Usage: avdanpac fetch/install/remove/removeudata/version/help/update"
     exit 1

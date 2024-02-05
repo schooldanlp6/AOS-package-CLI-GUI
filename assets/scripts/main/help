@@ -1,2 +1,13 @@
-#!/bin/bashThis branch is not behind the upstream 
+#!/bin/bash
+echo "The Help Screen:"
 echo ""
+echo "avdanpac help - displays this screen"
+echo "avdanpac fetch - gets the latest versions and updates of all packages and system"
+echo "avdanpac update - updates the OS"
+echo "avdanpac install <packagename> - Installs a package"
+echo "avdanpac hold hold/unhold <packagename> holds/unholds packages to not update. use with caution dependencie issues might occur"
+echo "avdanpac remove <packagename> - Removes a package"
+echo "avdanpac removeudata <packagename> - Removes a package and its coresponding userdata (experimental)"
+echo "avdanpac version - shows your version of avdanpac"
+
+#Oh yes implement a search script
