@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Colors
+GREEN="\033[0;32m"
+RED="\033[0;31m"
+NC="\033[0m"
+
+if [[ $# -lt 1 ]]; then
+    echo -e "${RED}Usage:${NC} $0 <github_repo_url> [branch]"
+    exit 1
+fi
+
+REPO_URL="$1"
+BRANCH="${2:-}"
+
+# Create temp directory
+TMPDIR="$(mktemp -d)"
+echo -e "${GREEN}[*] Cloning into:${NC} $TMPDIR"
+
+# Clone the repository
+if [[ -n "$BRANCH" ]]; then
+    git clone --depth 1 -b "$BRANCH" "$REPO_URL" "$TMPDIR"
+else
+    git clone --depth 1 "$REPO_URL" "$TMPDIR"
+fi
+
+# Ensure install.sh exists
+if [[ ! -x "$TMPDIR/install.sh" ]]; then
+    echo -e "${RED}[!] install.sh not found or not executable in repo${NC}"
+    exit 2
+fi
+
+# Run the installer
+echo -e "${GREEN}[*] Running installer...${NC}"
+(
+    cd "$TMPDIR"
+    ./install.sh
+)
+
+# Cleanup
+echo -e "${GREEN}[*] Cleaning up...${NC}"
+rm -rf "$TMPDIR"
+
+echo -e "${GREEN}[✓] Done${NC}"
+

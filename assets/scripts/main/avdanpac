@@ -29,6 +29,8 @@ case "$1" in
     "untar")
         /etc/aospac/scripts/untar
         ;;
+    "github-install")
+	/etc/aospac/scripts/github-install
     *)
         echo "OXYDE"
         ;;

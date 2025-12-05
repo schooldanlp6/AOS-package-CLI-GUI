@@ -148,6 +148,7 @@ sudo mv untar scripts/untar
 sudo mv version scripts/version
 sudo mv help scripts/help
 sudo mv hold scripts/hold
+sudo mv github-install scripts/github-install
 echo "Installing core"
 sudo mv avdanpac /usr/bin/avdanpac
 echo "Core installed"
